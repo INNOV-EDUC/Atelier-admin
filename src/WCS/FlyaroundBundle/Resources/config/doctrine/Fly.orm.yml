@@ -1,0 +1,21 @@
+WCS\FlyaroundBundle\Entity\Fly:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        latitude:
+            type: float
+        longitude:
+            type: float
+        type:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

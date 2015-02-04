@@ -1,0 +1,30 @@
+fly:
+    path:     /
+    defaults: { _controller: "WCSFlyaroundBundle:Fly:index" }
+
+fly_show:
+    path:     /{id}/show
+    defaults: { _controller: "WCSFlyaroundBundle:Fly:show" }
+
+fly_new:
+    path:     /new
+    defaults: { _controller: "WCSFlyaroundBundle:Fly:new" }
+
+fly_create:
+    path:     /create
+    defaults: { _controller: "WCSFlyaroundBundle:Fly:create" }
+    requirements: { _method: post }
+
+fly_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "WCSFlyaroundBundle:Fly:edit" }
+
+fly_update:
+    path:     /{id}/update
+    defaults: { _controller: "WCSFlyaroundBundle:Fly:update" }
+    requirements: { _method: post|put }
+
+fly_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "WCSFlyaroundBundle:Fly:delete" }
+    requirements: { _method: post|delete }

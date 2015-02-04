@@ -1,0 +1,11 @@
+wcs_flyaround_terrain:
+    resource: "@WCSFlyaroundBundle/Resources/config/routing/terrain.yml"
+    prefix:   /terrain
+
+wcs_flyaround_fly:
+    resource: "@WCSFlyaroundBundle/Resources/config/routing/fly.yml"
+    prefix:   /fly
+
+wcs_flyaround_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: WCSFlyaroundBundle:Default:index }

@@ -1,0 +1,21 @@
+WCS\FlyaroundBundle\Entity\Terrain:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        createdAt:
+            type: datetime
+        open:
+            type: boolean
+            column: open
+        toda:
+            type: integer
+    lifecycleCallbacks: {  }

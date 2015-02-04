@@ -1,0 +1,10 @@
+terrain:
+    path:     /
+    defaults: { _controller: "WCSFlyaroundBundle:Terrain:index" }
+
+terrain_show:
+    path:     /{id}/show
+    defaults: { _controller: "WCSFlyaroundBundle:Terrain:show" }
+
+
+
