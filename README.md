@@ -18,6 +18,8 @@ Injection de dépendances
 ------------------------
 Dans le fichier composer.json ajouter les lignes suivantes dans la partie require.
 ```php
+"require":{
+        ...
         "sonata-project/cache-bundle": "2.2.*@dev",
         "sonata-project/block-bundle": "2.3.*@dev",
         "sonata-project/jquery-bundle": "1.9.*@dev",
@@ -27,4 +29,5 @@ Dans le fichier composer.json ajouter les lignes suivantes dans la partie requir
         "sonata-project/doctrine-orm-admin-bundle": "2.4.*@dev",
         "sonata-project/admin-bundle": "dev-master",
         "sonata-project/core-bundle": "dev-master"
+}
 ```
