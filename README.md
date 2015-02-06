@@ -8,7 +8,7 @@ Déroulé de l'atelier
 --------------------
 
 La première étape est de créer un projet SF2 et de déclarer deux entités et les controleurs CRUD qui vont avec.
-Ensuite l'atelier s'inspire largement du tutoriel Jobeet chapitres 12 et 13.
+Ensuite l'atelier s'inspire largement du tutoriel [Jobeet](http://jobeet.thuau.fr/le-paquet-admin) chapitres 12 et 13.
 
 Attention !
 Le tutoriel n'est plus à jour :
@@ -17,6 +17,7 @@ Le tutoriel n'est plus à jour :
 Injection de dépendances
 ------------------------
 Dans le fichier composer.json ajouter les lignes suivantes dans la partie require.
+```php
         "sonata-project/cache-bundle": "2.2.*@dev",
         "sonata-project/block-bundle": "2.3.*@dev",
         "sonata-project/jquery-bundle": "1.9.*@dev",
@@ -26,3 +27,4 @@ Dans le fichier composer.json ajouter les lignes suivantes dans la partie requir
         "sonata-project/doctrine-orm-admin-bundle": "2.4.*@dev",
         "sonata-project/admin-bundle": "dev-master",
         "sonata-project/core-bundle": "dev-master"
+```
