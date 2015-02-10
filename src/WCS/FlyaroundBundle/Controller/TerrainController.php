@@ -5,7 +5,6 @@ namespace WCS\FlyaroundBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-use WCS\FlyaroundBundle\Entity\Terrain;
 
 /**
  * Terrain controller.

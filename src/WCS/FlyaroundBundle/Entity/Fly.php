@@ -2,7 +2,6 @@
 
 namespace WCS\FlyaroundBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Fly
