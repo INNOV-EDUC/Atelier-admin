@@ -1,12 +1,23 @@
+# app/config/security.yml
+
 security:
     providers:
-        in_memory:
-            memory: ~
+        main:
+            entity: { class: WCS\FlyaroundBundle\Entity\User, property: username }
 
     firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt|error)|css|images|js)/
-            security: false
+        secured_area:
+           pattern:    ^/
+           anonymous: ~
+           form_login:
+               login_path:  /login
+               check_path:  /login_check
+           logout:
+               path:   /logout
+               target: /
 
-        default:
-            anonymous: ~
+    access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN }
+
+    encoders:
+        WCS\FlyaroundBundle\Entity\User: sha512
